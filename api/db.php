@@ -1,5 +1,6 @@
 <?php
 
+// Declare credentials
 $server = "localhost";
 $username = "admin";
 $password = "";
