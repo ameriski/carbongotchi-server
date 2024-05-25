@@ -3,9 +3,14 @@ body {
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	padding: 2vh;
+  padding: 2%;
+  margin: 0;
+  
 }
 .container {
-	width: 100%;
-	padding: 5em 2vh;
+	margin:2%;
+}
+img {
+  width: 100%;
+  border-bottom: dotted black;
 }
