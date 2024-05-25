@@ -28,7 +28,7 @@
 					include "db.php";
 					
 					$carbon_db = mysqli_select_db($conn, "carbongatchi"); 
-					$sql = "INSERT INTO carbondioxide (lat, long, level) VALUES (" . floatval($lat_value) . ", " . floatval($long_value) . ", " . intval($carbon_ppm) . ")";
+					$sql = "INSERT INTO carbondioxide (lat, long, cppm) VALUES (" . floatval($lat_value) . ", " . floatval($long_value) . ", " . intval($carbon_ppm) . ")";
 					if ($conn->query($sql) === TRUE) {
 						echo "200 Submitted Successfully";
 						exit();
