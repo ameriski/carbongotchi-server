@@ -31,11 +31,14 @@
 					$sql = "INSERT INTO carbondioxide (lat, long, level) VALUES (" . floatval($lat_value) . ", " . floatval($long_value) . ", " . intval($carbon_ppm) . ")";
 					if ($conn->query($sql) === TRUE) {
 						echo "200 Submitted Successfully";
+						exit();
 					} else {
 						echo "500 ISE<br>" . $conn->error;
+						exit();
 					}
 				} else {
 					echo "405 Invalid Data";
+					exit();
 				}
 			}
 		}
