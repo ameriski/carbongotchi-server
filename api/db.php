@@ -2,7 +2,7 @@
 
 // Declare credentials
 $server = "localhost";
-$username = "admin";
+$username = "root";
 $password = "";
 
 // Establish connection 
