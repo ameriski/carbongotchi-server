@@ -1,16 +1,28 @@
 body {
 	background-color: lavender;
 	font-family: "Roboto", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-  padding: 2%;
-  margin: 0;
-  
+ 	font-weight: 400;
+  	font-style: normal;
+  	padding: 2%;
+  	margin: 0;
+  	height: 10vh;
+  	overflow: hidden;
 }
+
 .container {
 	margin:2%;
 }
-img {
-  width: 100%;
-  border-bottom: dotted black;
+
+#logo {
+  	width: 20%;
+  	border-bottom: dotted black;
+	margin: auto;
+  	display: block;
+}
+
+.logo-frame {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 800px;
 }
