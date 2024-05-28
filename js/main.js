@@ -32,6 +32,16 @@ window.onload = function() {
       layers: [baseLayer, heatmapLayer]
     });
 
+    fetch("https://ipwho.is/", {
+        method: 'GET',
+      })
+      .then(response  => response.json())
+      .then(data => {
+        map.panTo(new L.LatLng(data["latitude"], data["longitude"]));
+      })
+      .catch(rejected => {
+          console.log(rejected);
+      })
 
     let last_map_update = 0
     const throttle_ms = 500
